@@ -9,7 +9,8 @@ A rearrangement of the sounds (phonemes) of a word/phrase to make a new word/phr
 Examples
   * *lucky gas* : *galaxy*
   * *philosophy* : *awful fussy* 
-  
+  * *antidisestablishmentarianism* : *banished alliance retested animism* : *dimensionality embarrasses tightness*
+ 
 # Algorithm
 
 An existing anagram solver can be adapted to solve phonemes by building a custom dictionary. There are 39 phonemes in the [CMU pronouncing dictionary](http://www.speech.cs.cmu.edu/cgi-bin/cmudict). I give each a single ASCII character (see `encode_word`). I build a new dictionary in `build_dictionary` by cross-referencing a scrabble dictionary with the CMU pronouncing dictionary. The anaphone format of the new dictionary files look like this:
