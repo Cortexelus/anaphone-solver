@@ -13,7 +13,7 @@ Examples
  
 # Algorithm
 
-An existing anagram solver can be adapted to solve phonemes by building a custom dictionary. There are 39 phonemes in the [CMU pronouncing dictionary](http://www.speech.cs.cmu.edu/cgi-bin/cmudict). I give each a single ASCII character (see `encode_word`). I build a new dictionary in `build_dictionary` by cross-referencing a scrabble dictionary with the CMU pronouncing dictionary. The anaphone format of the new dictionary files look like this:
+An existing anagram solver can be adapted to solve phonemes by building a custom dictionary. There are 39 phonemes in the [CMU pronouncing dictionary](http://www.speech.cs.cmu.edu/cgi-bin/cmudict). I give each a single ASCII character (see `encode_word()`). I build a new dictionary in `build_dictionary()` by cross-referencing a scrabble dictionary with the CMU pronouncing dictionary. The anaphone format of the new dictionary files look like this:
 
 ```
 D0LO;EV  cartel's
@@ -34,6 +34,8 @@ D0LOBW1G  cartesian
 ```
 
 * `TWL06.txt`: scrabble dictionary of commonly used words
+
+Change the dictionary you want to use in `load_dictionary()` and `get_candidate_words():`:
 * `common_combo_dictionary.txt`: intersection of scrabble and cmu dictionaries in anaphone format.
 * `combo_dictionary.txt`: cmu dictionary in anaphone format.
 * `simple_combo_dictionary.txt`: simple dictionary in anaphone format used for debugging
@@ -42,7 +44,7 @@ Python anagram solver was adapted from [this code](http://stackoverflow.com/ques
 
 # This repo
 
-Contains backup of Google AppEngine source code. Originally created at HackNY 2012. 
+Contains backup of Google AppEngine source code for Anaphonr, originally created at HackNY 2012. 
 
 # Todo
 
